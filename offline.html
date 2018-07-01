@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <header class="converter__title">
+                <h1>Currency Converter offline</h1>
+            </header>
+            <form class="converter-form">
+                <div class="converter__currency-card">
+                    <div class=" converter-form-group converter__currency-result">
+                        
+                    </div>
+                    <div class="converter-form-group converter__currency-amount">
+                        <input type="text" name="amount" id="amount" class="converter__currency-amount-input" autofocus>
+                    </div>
+                    <div class="converter-form-group converter__currency-from">
+                        <select name="from" id="from" class="converter__currency-from-input">
+                            <option value="" selected>Choose a currency</option>            
+                        </select>
+                    </div>
+                    <div class="converter-form-group converter__currency-to">
+                        <select name="to" id="to" class="converter__currency-to-input">
+                            <option value="" selected>Choose a currency</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Convert" class="converter__currency-btn">
+                </div>
+            </form>
+
+        </div>
+    </div>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

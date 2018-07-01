@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(to bottom, green, rgb(0, 255, 13));
+    background-repeat: no-repeat;
+    font-size: 1rem;
+    height: 100vh;
+}
+
+.container {
+    align-items: center;
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(#000, #000, #000, 0.7);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+
+.converter {
+    margin: 0 auto;
+}
+.converter__title {
+    text-align: center;
+}
+
+.converter__currency-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr min-content min-content;
+    align-items: center;
+    margin: 5rem 2rem;
+}
+
+.converter__currency-result {
+    color: #fff;
+    background: #263238;
+    border: 1px solid #eee;
+    font-size: 3rem;
+    grid-column: 2/3;
+    padding: 2rem;
+    text-align: center;
+}
+
+.converter__currency-amount {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.converter__currency-from {
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.converter__currency-to {
+    grid-column: 3/4;
+    grid-row: 3;
+}
+
+.converter__currency-btn {
+    grid-column: 2/3;
+    grid-row: 4;
+}
+
+.converter-form-group select,
+.converter__currency-amount-input,
+.converter__currency-btn {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.converter__currency-amount-input {
+    padding-left: 0;
+}
+
+.converter__currency-btn {
+    background: #04b104;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.currency-to-symbole {
+    font-size: 1rem;
+}
+.currency-from-symbole {
+    display: inline-block;
+    margin-right: 7px;
+    align-self: center;
+}
+.currency-value {
+    font-size: 20px;
+}
+
+.converter-direction {
+    grid-column: 2/3;
+    grid-row: 3;
+    justify-self: center;
+}
+
+.icon-direction {
+    width: 2rem;
+    height: 2rem;
+}
